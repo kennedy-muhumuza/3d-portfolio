@@ -7,11 +7,15 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
+interface TagItems{
+  name: string,
+  color: string,
+}
 interface ProjectProps{
   index: number,
   name: string,
   description: string,
-  tags: any,
+  tags: TagItems[],
   image: string,
   source_code_link: string,
 }
@@ -78,7 +82,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant(2)}>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
