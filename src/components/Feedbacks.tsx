@@ -5,7 +5,17 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 
-const FeedbackCard = ({
+
+interface FeedBackProps{
+  index: number,
+  testimonial: any,
+  name: string,
+  designation: string,
+  company: string,
+  image: string,
+}
+
+const FeedbackCard: React.FC<FeedBackProps> = ({
   index,
   testimonial,
   name,
@@ -48,7 +58,7 @@ const Feedbacks = () => {
       <div
         className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
       >
-        <motion.div variants={textVariant()}>
+        <motion.div variants={textVariant(2)}>
           <p className={styles.sectionSubText}>What others say</p>
           <h2 className={styles.sectionHeadText}>Testimonials.</h2>
         </motion.div>
