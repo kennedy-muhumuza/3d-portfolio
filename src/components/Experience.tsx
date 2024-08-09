@@ -1,14 +1,3 @@
-
-
-// const Experience = () => {
-//   return (
-//     <div>Experience</div>
-//   )
-// }
-
-// export default Experience
-
-import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
