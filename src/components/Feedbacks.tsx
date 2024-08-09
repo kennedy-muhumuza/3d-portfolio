@@ -1,8 +1,8 @@
-
+import {motion} from "framer-motion"
 
 const Feedbacks = () => {
   return (
-    <div>Feedbacks</div>
+    <motion.div></motion.div>
   )
 }
 
