@@ -7,7 +7,16 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({
+interface ProjectProps{
+  index: number,
+  name: string,
+  description: string,
+  tags: any,
+  image: string,
+  source_code_link: string,
+}
+
+const ProjectCard: React.FC<ProjectProps> = ({
   index,
   name,
   description,
