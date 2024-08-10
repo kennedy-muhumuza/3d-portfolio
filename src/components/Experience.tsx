@@ -12,16 +12,8 @@ import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
 
-interface ExperienceCardProps {
-  title: string,
-  company_name: string,
-  icon: any,
-  iconBg: string,
-  date: string,
-  points: string[],
-}
 
-const ExperienceCard:React.FC<ExperienceCardProps[]> = ({ experience }) => {
+const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -52,7 +44,7 @@ const ExperienceCard:React.FC<ExperienceCardProps[]> = ({ experience }) => {
       </div>
 
       <ul className='mt-5 list-disc ml-5 space-y-2'>
-        {experience.points.map((point, index) => (
+        {experience.points.map((point:string, index:number) => (
           <li
             key={`experience-point-${index}`}
             className='text-white-100 text-[14px] pl-1 tracking-wider'
