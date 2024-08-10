@@ -114,7 +114,15 @@ const technologies = [
   },
 ];
 
-const experiences = [
+interface ExperienceProps {
+  title: string,
+  company_name: string,
+  icon: any,
+  iconBg: string,
+  date: string,
+  points: string[],
+}
+const experiences:ExperienceProps[] = [
   {
     title: "React.js Developer",
     company_name: "Starbucks",

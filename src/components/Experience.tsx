@@ -11,7 +11,17 @@ import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
-const ExperienceCard = ({ experience }) => {
+
+interface ExperienceCardProps {
+  title: string,
+  company_name: string,
+  icon: any,
+  iconBg: string,
+  date: string,
+  points: string[],
+}
+
+const ExperienceCard:React.FC<ExperienceCardProps[]> = ({ experience }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -58,7 +68,7 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant(2)}>
         <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far
         </p>

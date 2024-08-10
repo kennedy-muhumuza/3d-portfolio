@@ -5,7 +5,6 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 
-
 interface FeedBackProps{
   index: number,
   testimonial: any,
