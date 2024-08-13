@@ -7,9 +7,9 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 interface CardProps {
-  index: number,
-  title: string,
-  icon: any,
+  index: number;
+  title: string; 
+  icon: any;
 }
 
 const ServiceCard: React.FC<CardProps> = ({ index, title, icon }) => (

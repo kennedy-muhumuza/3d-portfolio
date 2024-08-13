@@ -8,16 +8,16 @@ import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 interface TagItems{
-  name: string,
-  color: string,
+  name: string;
+  color: string;
 }
 interface ProjectProps{
-  index: number,
-  name: string,
-  description: string,
-  tags: TagItems[],
-  image: string,
-  source_code_link: string,
+  index: number;
+  name: string;
+  description: string;
+  tags: TagItems[];
+  image: string;
+  source_code_link: string;
 }
 
 const ProjectCard: React.FC<ProjectProps> = ({

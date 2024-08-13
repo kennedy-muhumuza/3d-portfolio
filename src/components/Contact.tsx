@@ -11,7 +11,7 @@ const Contact = () => {
     const formRef = useRef<HTMLFormElement | null>(null);
 
   const [form, setForm] = useState({
-    name: "",
+    name: "", 
     email: "",
     message: "",
   });

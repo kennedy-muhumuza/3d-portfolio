@@ -115,12 +115,12 @@ const technologies = [
 ];
 
 interface ExperienceProps {
-  title: string,
-  company_name: string,
-  icon: any,
-  iconBg: string,
-  date: string,
-  points: string[],
+  title: string;
+  company_name: string;
+  icon: any;
+  iconBg: string;
+  date: string;
+  points: string[];
 }
 const experiences:ExperienceProps[] = [
   {

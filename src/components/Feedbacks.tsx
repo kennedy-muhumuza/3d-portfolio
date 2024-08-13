@@ -6,12 +6,12 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 
 interface FeedBackProps{
-  index: number,
-  testimonial: any,
-  name: string,
-  designation: string,
-  company: string,
-  image: string,
+  index: number;
+  testimonial: any;
+  name: string;
+  designation: string; 
+  company: string;
+  image: string;
 }
 
 const FeedbackCard: React.FC<FeedBackProps> = ({
