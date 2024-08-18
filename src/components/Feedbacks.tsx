@@ -4,15 +4,9 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
+import { FeedBackProps } from "../lib/types";
 
-interface FeedBackProps{
-  index: number;
-  testimonial: any;
-  name: string;
-  designation: string; 
-  company: string;
-  image: string;
-}
+
 
 const FeedbackCard: React.FC<FeedBackProps> = ({
   index,

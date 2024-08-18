@@ -5,12 +5,7 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-
-interface CardProps {
-  index: number;
-  title: string; 
-  icon: any;
-}
+import { CardProps } from "../lib/types";
 
 const ServiceCard: React.FC<CardProps> = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'  options={{
